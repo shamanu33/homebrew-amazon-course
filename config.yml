@@ -1,0 +1,18 @@
+title: homebrew-amazon
+description: >-
+  This is to learn about the repository being utilized to keep files and project
+  safe
+template:
+  repo: homebrew-amazon-template
+  name: homebrew-amazon
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
